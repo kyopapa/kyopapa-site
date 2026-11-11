@@ -1,0 +1,99 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --bg: #fafaf8;
+  --card: #fff;
+  --line: #e2e2dc;
+  --accent: #1f6f5c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+header, main, footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header { padding-top: 28px; }
+
+.site-name {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 8px 0 4px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.2em 0 0.6em;
+  padding-left: 10px;
+  border-left: 4px solid var(--accent);
+}
+
+p, ul, ol { margin: 0.8em 0; }
+li { margin: 0.3em 0; }
+
+a { color: var(--accent); }
+
+.meta {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.card p { margin: 0.4em 0; }
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li { margin: 12px 0; }
+
+.links a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links a small {
+  display: block;
+  font-weight: normal;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 48px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+footer a { margin-right: 1em; }
